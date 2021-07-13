@@ -13,8 +13,6 @@ main{
     background-color: #562EFF;
     display: flex;
     justify-content: space-around;
-   
-    
 }
 .logo{
     display: flex;
@@ -25,10 +23,7 @@ main{
     width: 40.42px;
     height: 51px;
     padding-top: 26px;
-    padding-bottom: 17px;
-   
-    
-    
+    padding-bottom: 17px;  
 }
 .logo p{
     color: white;
@@ -159,27 +154,36 @@ hr{
 @media only screen and (max-width:688px){
     
     .navbar-design{
-        width:100%; 
+        width:100%;
+        flex-direction:column; 
+    }
+    .section-title{
+        padding-left: 20px;
     }
     .logo{
         width: 50px;
         display: flex;
+        justify-content: center;
         align-content: center;
         margin-right: 7px;
-       
+        margin-bottom: 0;
     }
     .logo img{
-       margin-left: 30px;
-       margin-bottom: 17px;
+       justify-content: center;
+       align-content: center;
+       margin-left: 300px;
     }
-    .logo p{
-        display: none;
+     .logo p{
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
     }
    
     .links{
         display: flex;
         align-items: center;
         margin-left: 20px;
+        
     }
     .profile-pic{
         height: 50px;
@@ -200,6 +204,7 @@ hr{
     }
     .blogs{
         grid-template-columns: repeat(1, 1fr);
+        padding-left: 15px;
         
     }
     .blog{
@@ -208,6 +213,7 @@ hr{
     }
     .courses{
         grid-template-columns: repeat(1, 1fr);
+        padding-left: 20px;
         
     }
     .course{
